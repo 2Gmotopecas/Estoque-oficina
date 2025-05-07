@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Estoque Oficina</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f5f5f5; }
+    h1 { color: #333; }
+    input, select, button { margin: 5px 0; padding: 8px; width: 100%; }
+    .item { margin: 10px 0; padding: 10px; background: #fff; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <h1>Estoque Oficina</h1>
+
+  <h3>Adicionar Peça</h3>
+  <input id="nome" placeholder="Nome da Peça" />
+  <input id="codigo" placeholder="Código" />
+  <input id="quantidade" type="number" placeholder="Quantidade" />
+  <button onclick="adicionarItem()">Adicionar</button>
+
+  <h3>Itens no Estoque</h3>
+  <div id="estoque"></div>
+
+  <script src="estoque.js"></script>
+</body>
+</html>
